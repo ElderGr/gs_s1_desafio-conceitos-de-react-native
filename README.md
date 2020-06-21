@@ -22,13 +22,13 @@ Link para a API que o APP está consumindo
 
 No caminho src/services/api.js teremos o arquivo de configuração para as requisições a API. Será necessário realizar alterações no valor de _baseURL_ baseado na forma que o ambiente mobile está sendo utilizado
 
-**Device USB IOS/Android**
+**Device USB IOS/Android**: 
 Caso você esteja com um device conectado via USB tanto Android quanto IOS, a string deverá seguir o padrão http://_ip_:_port_, onde ip é o ip do pc que está sendo executada a api e port a porta que está sendo utilizada. É necessário que o device esteja na mesma rede da pc.
 
-**Device Android**
+**Device Android**:
 Execute o comando adb reverse tcp:3333 tcp:3333 e defina o valor da _baseURL_ como http://localhost:3333
 
-**Device IOS**
+**Device IOS**:
 Defina o valor da _baseURL_ como http://localhost:3333
 
 ## 📋 Comandos disponíveis
